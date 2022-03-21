@@ -10,6 +10,7 @@
 //     .then((result) => result + 'passando pelo then')
 //     .then((result) => result + 'e agora acobou!')
 //     .catch((err) => console.log(err.message));
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.>>>>
 
 // projeto do catcast 
 
