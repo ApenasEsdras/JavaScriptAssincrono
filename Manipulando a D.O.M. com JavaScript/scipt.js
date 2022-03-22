@@ -1,0 +1,66 @@
+// function changeMode() {
+//     changeClasses();
+//     changeText();
+// }
+
+// function changeClasses() {
+//     button.classList.toggle(darkModeClass);
+//     h1.classList.toggle(darkModeClass);
+//     body.classList.toggle(darkModeClass);
+//     footer.classList.toggle(darkModeClass);
+// }
+
+// function changeText() {
+//     const lightMOde = 'light Mode';
+//     const darckMode = 'Dark Mode'
+
+//     if (body.classList.contains(darkModeClass)) {
+//         button.innerHTML = lightMode;
+//         h1.innerHTML = darckMode + 'ON';
+//         return;
+//     }
+//     button.innerHTML = darckMode;
+//     h1.innerHTML = lightMode + 'ON'
+// }
+
+// const darkModeClass = 'dark-mode';
+// const button = document.getElementById(mode - Selection);
+// const h1 = document.getElementById('page-tutle');
+// const body = document.getElementsByTegName('body'[0]);
+// const footer = document.getElementsByTegName('footer'[0]);
+
+// button.addEventListener('click', changeMode)
+
+function changeMode() {
+    changeClasses();
+    changeText();
+}
+
+function changeClasses() {
+    button.classList.toggle(darkModeClass);
+    h1.classList.toggle(darkModeClass);
+    body.classList.toggle(darkModeClass);
+    footer.classList.toggle(darkModeClass);
+}
+
+function changeText() {
+    const lightMode = 'Light Mode';
+    const darkMode = 'Dark Mode';
+
+    if (body.classList.contains(darkModeClass)) {
+        button.innerHTML = lightMode;
+        h1.innerHTML = darkMode + ' ON';
+        return;
+    }
+
+    button.innerHTML = darkMode;
+    h1.innerHTML = lightMode + ' ON';
+}
+
+const darkModeClass = 'dark-mode';
+const button = document.getElementById('mode-selector');
+const h1 = document.getElementById('page-title');
+const body = document.getElementsByTagName('body')[0];
+const footer = document.getElementsByTagName('footer')[0];
+
+button.addEventListener('click', changeMode);
